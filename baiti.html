@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <script>
+            function calc() {var s = document.getElementById("sek").value;
+                var v = document.querySelector('input[name="v"]:checked').value;
+             
+            var rez;
+              if (v === "KB") { rez = s * 25 * 125;}
+              else { rez = s * 25 * 122;}
+              
+                
+            document.getElementByID("out").value = rez;    
+                }
+        </script>
+        Aprēķināt cik daudz informācijas var lejuplādēt<br>
+        <input id ="sek">
+        sekundēs, ja interneta ātrums ir 25Mbps <br>
+         <button onclick="calc()"> Aprēķināt </button><br><br>
+        
+        Atbilde<br>
+        <input id="out" readonly>
+        <input type="radio" name="v" value="KB" checked> KB
+        <input type="radio" name="v" value="KiB"> KiB
+       
+        
+        
+        
+        
+    </body>
+</html>
